@@ -1,0 +1,17 @@
+[project]
+name = "gemma4-traffic-liability-assistant"
+version = "0.1.0"
+description = "Gemma 4 multimodal and native function-calling demo for traffic liability assistance."
+requires-python = ">=3.10"
+dependencies = [
+  "torch>=2.3",
+  "transformers>=4.53",
+  "accelerate>=0.33",
+  "pillow>=10.0",
+  "opencv-python>=4.9",
+  "numpy>=1.26"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
